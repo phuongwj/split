@@ -1,10 +1,10 @@
-from fastapi import FastAPI
+from fastapi import APIRouter
 from models.bill import Bill
 from services.split_service import split_bill
 
-app = FastAPI()
+router = APIRouter()
 
-@app.post("/")
+@router.post("/")
 def split_bill_endpoint(bill: Bill):
     result = split_bill(bill)
     return {"results": result}

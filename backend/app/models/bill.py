@@ -2,7 +2,7 @@ from pydantic import BaseModel
 
 class Item(BaseModel):
     name: str
-    price: float 
+    price: float
     participants: list[str]
 
 class Bill(BaseModel):
