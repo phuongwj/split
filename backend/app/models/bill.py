@@ -6,6 +6,6 @@ class Item(BaseModel):
     participants: list[str]
 
 class Bill(BaseModel):
-    item: list[Item]
+    items: list[Item]
     tax: float = 0.0
     tip: float = 0.0

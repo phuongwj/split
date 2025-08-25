@@ -5,7 +5,7 @@ def split_bill(bill: Bill) -> dict:
 
     # Subtotal per person
     subtotal = 0
-    for item in bill.item:
+    for item in bill.items:
         subtotal += item.price
         share = item.price / len(item.participants)
         for person in item.participants:
