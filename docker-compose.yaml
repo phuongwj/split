@@ -1,0 +1,13 @@
+# Current docker compose version for this is v2.37.1
+version: "3.9"
+
+# Defines all the containers we want to run, each container is called a "service" (backend, frontend)
+services:
+  backend:
+    build: ./backend/app
+    container_name: fastapi-dev
+    ports: 
+      - "8000:8000"
+    volumes:
+      - ./backend/app:/backend/app
+    command: uvicorn main:app --host 0.0.0.0 --reload
