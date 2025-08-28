@@ -32,5 +32,6 @@ split-it/
 ## 🛠️ Tech Stack
 
 - **Backend:** FastAPI (Python)
-- **Frontend:** React (Javascript), coming soon...
+- **Frontend:** React (Javascript) - coming soon
 - **Dev Environment:** Docker & Docker Compose
+- **OCR for receipt parsing** - coming soon
