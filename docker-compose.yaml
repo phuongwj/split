@@ -5,9 +5,5 @@ version: "3.9"
 services:
   backend:
     build: ./backend/app
-    container_name: fastapi-dev
     ports: 
       - "8000:8000"
-    volumes:
-      - ./backend/app:/backend/app
-    command: uvicorn main:app --host 0.0.0.0 --reload
